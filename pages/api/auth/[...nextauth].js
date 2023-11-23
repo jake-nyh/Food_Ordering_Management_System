@@ -1,15 +1,12 @@
 import NextAuth from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
-import clientPromise from "../../../util/mongo";
 import User from "../../../models/User";
 import dbConnect from "../../../util/dbConnect";
 import bcrypt from "bcryptjs";
 dbConnect();
 
 export default NextAuth({
-  /*  adapter: MongoDBAdapter(clientPromise), */
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID,

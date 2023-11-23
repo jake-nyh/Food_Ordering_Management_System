@@ -16,9 +16,9 @@ const CampaignItem = () => {
         />
       </div>
       <div className="text-white">
-        <Title addClass="text-2xl">Tasty Thursdays</Title>
+        <Title addClass="text-2xl">Friday Special</Title>
         <div className="font-dancing my-1">
-          <span className="text-[40px]">20%</span>
+          <span className="text-[40px]">30%</span>
           <span className="text-sm inline-block ml-1">Off</span>
         </div>
         <button className="btn-primary flex items-center gap-x-2">
